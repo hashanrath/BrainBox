@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: auto; /* Adjusted to fit buttons */
+    position: fixed;
+    width: 80px;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px; /* Reduced padding for more compact look */
+    border-radius: 20px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    bottom: 20px; /* Properly aligns the sidebar to the bottom */
+    top: auto; /* Ensures it's positioned based on bottom spacing */
+    justify-content: center; /* Center the buttons vertically */
+}
+
+.sidebar-button {
+    color: #6c63ff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f8f9fa;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-button:hover {
+    background-color: #6c63ff;
+    color: white;
+}
+
+/* Content area styling */
+.content {
+    margin-left: 100px;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for content container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    border-radius: 20px; /* Rounded corners */
+    margin: 10px; /* Add some margin to avoid touching the edges */
+}
+
+/* Search Bar Styling */
+.search-input-custom {
+    border: 2px solid #FFD700; /* Gold border */
+    border-radius: 25px; /* Fully rounded edges */
+    padding: 10px 15px;
+}
+
+.search-btn-custom {
+    border-radius: 25px; /* Fully rounded edges */
+    padding: 10px 20px;
+    background-color: #FFD700; /* Gold background color */
+    border: 1px solid #FFD700; /* Match border with button color */
+}
+
+.navbar .navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 20px; /* Rounded corners for profile section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.balance-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Content Area */
+.content-area {
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners for content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 20px; /* Rounded corners */
+}

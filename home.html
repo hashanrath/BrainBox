@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrainBox Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainBox Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/home.css">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Nav Bar -->
-    <header class="navbar">
-        <img src="logo.png" alt="BrainBox Logo" class="logo">
-        <h1>Welcome to Smart</h1>
-        <input type="search" placeholder="Search..." class="search-bar">
-        <div class="nav-icons">
-            <!-- Add icons as needed -->
-        </div>
-    </header>
 
-    <!-- Profile Section -->
-    <section class="profile-section">
-        <div class="profile-card">
-            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-image">
-            <div class="profile-info">
-                <h2>Felecia Burke</h2>
-                <button class="balance-btn">Balance: $123</button>
-                <p>Location: Hong Kong, China</p>
-                <p>Email: example@mail.com</p>
-                <!-- Additional details here -->
-            </div>
-        </div>
-        <!-- Add more cards as needed -->
-    </section>
+<!-- Sidebar -->
+<div class="sidebar">
+  <a href="#" class="sidebar-button">Instructor</a>
+  <a href="#" class="sidebar-button">Student</a>
+  <a href="#" class="sidebar-button">Higher Education</a>
+</div>
 
-    <!-- Main Content Area -->
-    <main class="content-area">
-        <div class="card">
-            <h3>Schedule</h3>
-            <!-- Add schedule content here -->
-        </div>
-        <div class="card">
-            <h3>Grades</h3>
-            <!-- Add grades and levels here -->
-        </div>
-        <!-- Add more sections as needed -->
-    </main>
+<!-- Main Content -->
+<div class="content">
+  <!-- Updated Search Bar -->
+  <nav class="navbar bg-white shadow-sm p-3 mb-4">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/brainboxlogo.jpg" alt="BrainBox Logo" width="40" height="40">
+      </a>
+      <!-- Search Bar -->
+      <form class="d-flex w-50 mx-auto">
+        <input class="form-control me-2 search-input-custom" type="search" placeholder="Yandex Search" aria-label="Search">
+        <button class="btn btn-warning search-btn-custom" type="submit">Find</button>
+      </form>
+      <!-- Search Icon -->
+      <i class="bi bi-search fs-4"></i>
+    </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Developed by: Nextnewest.com</p>
-    </footer>
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-card">
+        <img src="images/profile-pic.jpg" alt="Profile Picture" class="profile-image">
+        <div class="profile-info">
+            <h2>Felecia Burke</h2>
+            <button class="balance-btn">Balance: $123</button>
+            <p>Location: Hong Kong, China</p>
+            <p>Email: example@mail.com</p>
+        </div>
+    </div>
+  </section>
 
+  <!-- Main Content Area -->
+  <main class="content-area">
+    <div class="card">
+        <h3>Schedule</h3>
+    </div>
+    <div class="card">
+        <h3>Grades</h3>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Developed by: Nextnewest.com</p>
+  </footer>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
