@@ -49,32 +49,34 @@
       color: black;
       text-align: center;
       text-decoration: none;
-      transition: color 0.3s ease;
+      transition: transform 0.4s ease, color 0.4s ease;
     }
 
-    /* Display popup text when hovering over the icons */
+    /* Focus effect: icon enlarges and text pops up when hovering */
+    .sidebar a:hover {
+      transform: scale(1.4); /* Enlarge icon on hover */
+      color: #d508f5; /* Change icon color */
+    }
+
+    /* Popup text styling */
     .sidebar a::after {
       content: attr(data-title); /* Get the text from data-title attribute */
       position: absolute;
-      left: 30px;
+      left: 15px; /* Place it to the right of the icon */
+      top: 50%;
       opacity: 0;
-      transform: translateX(10px);
       color: black;
-      font-size: 15px;
+      font-size: 10px;
       white-space: nowrap;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: opacity 0.3s ease, transform 0.3s ease;
-      z-index: 100;
+      pointer-events: none; /* Make sure the text is not clickable */
     }
 
+    /* Show popup text when hovering */
     .sidebar a:hover::after {
       opacity: 1;
-      transform: translateX(0);
-    }
-
-    /* Hover effect */
-    .sidebar a:hover {
-      color: #d508f5; /* Change icon color on hover */
+      transform: translate(15px, -50%);
     }
 
     /* Settings icon */
@@ -88,6 +90,7 @@
 
     .settings-icon:hover {
       color: #6c63ff;
+      transform: scale(1.4);
     }
 
     /* Content area styling */
@@ -130,7 +133,7 @@
 
     .search-button {
       background-color: transparent;
-      color: rgb(0, 0, 0); /* Black color for the search icon */
+      color: #d508f5; ; /* Black color for the search icon */
       border: none;
       border-radius: 50%;
       padding: 8px;
@@ -141,10 +144,6 @@
       width: 35px;
       margin-left: 15px;
       cursor: pointer;
-    }
-
-    .icon-buttons .notification-dot {
-      position: relative;
     }
 
     .icon-buttons .notification-dot::after {
@@ -230,9 +229,6 @@
     </div>
   </div>
 
-  <!-- Example content -->
-  <h1>Main Content Area</h1>
-  <p>This is where the main content of your dashboard will be displayed.</p>
 </div>
 
 <!-- Bootstrap JS -->
